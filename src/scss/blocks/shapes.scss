@@ -1,0 +1,152 @@
+.shapes {
+    position: relative;
+
+    &__rectangles {
+        position: relative;
+        left: 3em;
+        bottom: -2vw;
+        width: 4em;
+
+    }
+
+    &__dots {
+        width: 2.9em;
+        position: relative;
+        width: 2.9em;
+        left: 12em;
+        bottom: 7vw;
+    }
+
+    &__waves {
+        width: 13em;
+        position: relative;
+        left: 15vw;
+        bottom: -2vw;
+    }
+
+    &__yellow-wave {
+        width: 6em;
+        position: absolute;
+        right: 10vw;
+        top: -43vw;
+        z-index: -1;
+    }
+
+    &__yellow-dots {
+        position: absolute;
+        left: 50vw;
+        top: -40vw;
+    }
+
+    &__purple-dots {
+        position: absolute;
+        right: 9vw;
+        bottom: 16vw;
+    }
+
+    &__triangle {
+        width: 10em;
+        position: absolute;
+        right: 9vw;
+        bottom: 6vw;
+    }
+    &__round-elipse {
+        display: none;
+    }
+    
+    &__round-elipse--higher {
+        display: none;
+    }
+    
+    &__elipse-top {
+        display: none;
+    }
+    
+    &__elipse-bottom {
+        display: none;
+    }
+}
+
+@media (min-width: 3556px) {
+
+    .shapes__round-elipse {
+        display: unset;
+        position: absolute;
+        width: 10em;
+        right: 5em;
+        bottom: -6em;
+        z-index: -3;
+    }
+
+    .shapes__round-elipse--higher {
+        display: unset;
+        position: absolute;
+        width: 13em;
+        right: 28em;
+        bottom: 3em;
+        z-index: -3;
+    }
+
+    .shapes__elipse-top {
+        display: unset;
+        position: absolute;
+        z-index: -4;
+    }
+
+    .shapes__elipse-bottom {
+        display: unset;
+        position: absolute;
+        z-index: -4;
+        top: calc(2.3em);
+        right: 0em;
+    }
+
+}
+
+@media (max-width: $desktopXl) {
+    .shapes {
+        &__rectangles {
+            margin-top: 60px;
+            left: 2em;
+            bottom: 0em;
+            width: 6em;
+        }
+
+        &__yellow-dots {
+
+            top: -38vw;
+        }
+    }
+}
+
+@media (max-width: $desktopWidth) {
+    .shapes {
+        &__triangle {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $tableWidth) {
+    .shapes {
+        &__yellow-dots {
+            display: none;
+        }
+
+        &__purple-dots {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $phoneWidth) {
+    .shapes {
+        &__waves {
+            top: -56em;
+            left: 1em;
+            transform: rotate(45deg);
+            width: 12em;
+            z-index: -1;
+        }
+    }
+}

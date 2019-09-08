@@ -1,0 +1,15 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/normalize.scss";
+@import "common.scss";
+
+// __b
+@import "./blocks/header.scss";
+@import "./blocks/content.scss";
+@import "./blocks/content-item.scss";
+@import "./blocks/action-button.scss";
+@import "./blocks/shapes.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social-list.scss";

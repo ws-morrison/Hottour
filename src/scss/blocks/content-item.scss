@@ -1,0 +1,57 @@
+.content-item {
+
+    &__title {
+        @include indent-reset;
+        font-family: $thirdFont;
+        margin-top: 1.49em;
+        margin-bottom: 0.4em;
+        font-size: 3.3em;
+        line-height: 1em;
+        text-transform: uppercase;
+        background: -webkit-linear-gradient(#d75778, #d9646d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__lead {
+        @include indent-reset;
+        font-family: $secondFont;
+        color: #d96a68;
+        line-height: 1.2em;
+        font-size: 0.83em;
+        width: 70%;
+        margin-bottom: 2em;
+    }
+
+    &__img {
+        border-radius: 50%;
+        width: 90%;
+    }
+}
+
+@media(max-width: $smDesktopWidth) {
+    .content-item {
+
+        width: calc(100% - 4.6em);
+        margin: 0 auto;
+
+        &__img-wrapper {
+            height: 25rem;
+            overflow: hidden;
+        }
+
+        &__img {
+            border-radius: unset;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: $phoneWidth) {
+    .content-item {
+        &__title {
+            margin-top: 0.2em;
+        }
+    }
+}

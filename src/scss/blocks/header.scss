@@ -1,0 +1,40 @@
+.header {
+    padding-top: 1.5em;
+
+    width: calc(100% - 4.6em);
+
+    margin: 0 auto;
+    flex-grow: 0;
+
+    &__nav-wrapper {
+        margin-bottom: 52px;
+        max-width: 30em;
+        margin-left: 1em;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav-link {
+        font-family: $mainFont;
+        font-size: 1em;
+        text-transform: uppercase;
+        color: #d43e8d;
+        line-height: 1.2;
+    }
+}
+
+
+@media (max-width: $phoneWidth) {
+    .header {
+        &__nav {
+            flex-direction: column
+        }
+
+        &__nav-link {
+            line-height: 1.6;
+        }
+    }
+}

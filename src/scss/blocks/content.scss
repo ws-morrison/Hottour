@@ -1,0 +1,25 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+
+    width: calc(100% - 4.6em);
+    margin: 0 auto;
+
+    &__col-1 {
+        flex-basis: calc(50% - 75px);
+    }
+
+    &__col-2 {
+        flex-basis: calc(50% - 75px);
+        align-self: center;
+        
+    }
+}
+
+@media(max-width: $smDesktopWidth) {
+    .content {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
