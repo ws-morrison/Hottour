@@ -1,7 +1,6 @@
 html {
   line-height: $mainLineHeight;
   font-size: calc(1em + 1vw);
-
 }
 
 .html__bg {
@@ -46,12 +45,17 @@ img {
   html {
     font-size: calc(0.9em + 0.9vw);
     // background-image: none;
+
   }
 }
 
 @media (max-width: $desktopWidth) {
   html {
     font-size: calc(0.9em + 0.9vw);
+    background-image: none;
+  }
+
+  .html__bg {
     background-image: none;
   }
 }
